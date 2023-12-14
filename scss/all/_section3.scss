@@ -1,0 +1,233 @@
+#section3{
+    padding: 100px 0px;
+    background: #F5F5F5;
+    margin-bottom: 160px;
+
+    .section3__wrapper{
+        border-radius: 20px;
+        background: #FFF;
+        display: flex;
+        
+        &--left{
+            padding: 70px;
+
+            & p{
+               display: flex;
+               align-items: center;
+               gap: 8px;
+
+               span{
+                color: #4285F4;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 500;
+               }
+            }
+
+            & h1{
+                width: 320px;
+                color: #000;
+                font-family: Montserrat;
+                font-size: 38px;
+                font-weight: 500;
+                line-height: 50px;
+               
+            }
+
+            & h2{
+                display: block;
+                width: 330px;
+                height: 2px;
+                margin: 30px 0;
+                background: linear-gradient(rgba(234, 67, 53, 1), rgba(251, 188, 5, 1), rgba(52, 168, 83, 1), rgba(66, 133, 244, 1));
+                background: red;
+            }
+
+            & p{
+                width: 330px;
+                color: #555;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 16px;
+            }
+
+            & button{
+                display: flex;
+                padding: 18px 50px;
+                align-items: flex-start;
+                gap: 8px;
+                border-radius: 100px;
+                border: 1.5px solid yellow; //radial-gradent(rgba(249, 237, 50, 1), rgba(238, 42, 123, 1), rgba(210, 42, 138, 1), rgba(139, 42, 178, 1), rgba(27, 42, 240, 1), rgba(0, 42, 255, 1));
+                background: #FFF;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-weight: 500;
+                background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            
+                &:hover{
+                    cursor: pointer;
+                    background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+                    color: #FFF;
+                    border: none;
+                }
+            }
+
+        }
+
+        &--right{
+            background: #299764;
+            padding: 50px 40px 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            overflow: hidden;
+            overflow-x: scroll;
+            &--card{
+                width: 420px;
+                height: 333px;
+                border-radius: 16px;
+                padding: 24px;
+                background: #FFF;
+                position: relative;
+        
+
+                &--wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 14px;
+
+                    & h3{
+                        color: #000;  
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-left: -90px;
+
+                        & a{
+                            text-decoration: none;
+                            color: #555;
+                            font-family: Montserrat;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    &-img2{
+                        width: 42px;
+                        height: 42px;
+                    }
+                }
+            }
+
+            & article{
+                width: 372px;
+                color: #000;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+
+            & p{
+                width: 372px;
+                display: inline-flex;
+                align-items: center;
+                gap: 16px;
+                padding-top: 32px;
+                border-top: 1.5px solid #E5E7EA;
+                position: absolute;
+                bottom: 24px;
+            }
+        }
+    }
+
+}
+
+@media (preferes-color-scheme:dark){
+    #section3{
+        background: #0000;
+        color: #FFF;
+    }
+}
+
+
+@media screen and (max-width: 391px) {
+    #section3{
+          padding: 20px;
+
+          .section3__wrapper{
+             display: flex;
+             flex-direction: column;
+
+             &--left{
+                width: 333px;
+                padding: 24px 20px;
+    
+               
+    
+                & h1{
+                    width: 290px;
+                }
+    
+                & h2{
+                    width: 290px;
+                }
+    
+                & p{
+                    width: 2900px;
+                }
+    
+            }
+
+            &--right{
+                padding: 20px 15px;
+                gap: 10px;
+                &--card{
+                    width: 300px;
+                    height: 333px;
+                    padding: 15px;
+
+            
+    
+                    &--wrapper{
+    
+                        & h3{
+                            font-size: 14px;
+                            margin-left: 0;
+
+    
+                            & a{
+                                font-size: 12px;
+                            }
+                        }
+                        img{
+                            width: 38px;
+                            height: 38px;
+                        }
+    
+                        &-img2{
+                            width: 38px;
+                            height: 38px;
+                        }
+                    }
+                }
+    
+                & article{
+                    width: 270px;
+                }
+    
+                & p{
+                    width: 270px;
+                    padding-top: 24px;
+                    bottom: 16px;
+                }
+            }
+          }
+    }
+    
+}

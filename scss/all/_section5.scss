@@ -1,0 +1,133 @@
+#section5{
+    width: 100%;
+    margin-bottom: 160px;
+
+    & h1{
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    & p{
+        width: 684px;
+        color: #555;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0px auto 40px;
+    }
+
+    .section5__wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 20px;
+
+        .section5__wrapper--card{
+            width: 590px;
+            height: 216px;
+            border-radius: 20px;
+            padding: 40px 40px 40px 32px;
+            background: #F5F5F5;
+            position: relative;
+    
+            & h2{
+                color: #000;
+                font-family: Montserrat;
+                font-size: 32px;
+                font-weight: 500 
+            }
+    
+            & h3{
+                width: 354px;
+                color: #555;
+                font-family: Montserrat;
+                text-align: left;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px; 
+                margin-top: 10px;
+            }
+    
+            & svg{
+                position: absolute;
+                top: 40px;
+                right: 40px;
+            }
+
+            &:hover{
+                background: #299764;
+                cursor: pointer;
+                transition: all .2s linear;
+                
+                & h2, h3{
+                    color: #FFF;
+                } 
+                & svg path {
+                    fill: #FFF;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:835px) {
+     
+    #section5{
+
+        .section5__wrapper{
+            
+            .section5__wrapper--card{
+                width: 387px;
+                height: 178px;
+             }
+        }
+    }
+}
+
+@media screen and (max-width:391px) {
+  #section5{
+
+    h1{
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
+
+    p{
+        font-size: 12px;
+        width: 300px;
+        margin: 0px auto 30px;
+    }
+    
+    .section5__wrapper{
+         grid-template-columns: repeat(1, auto);
+         
+         .section5__wrapper--card{
+            width: 330px;
+            padding: 30px 20px;
+
+            & h2{
+                font-size: 28px;
+            }
+    
+            & h3{
+                width: 290px;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            & svg{
+                position: absolute;
+                top: 30px;
+                right: 30px;
+            }
+         }
+    }
+
+  }
+}

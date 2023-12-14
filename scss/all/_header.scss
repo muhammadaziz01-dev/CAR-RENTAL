@@ -1,0 +1,192 @@
+header {
+    width: 100%;
+    border-bottom: 1.5px solid #E5E7EA;
+    padding-bottom: 20px;
+
+    .nav {
+        display: flex;
+        height: 94px;
+        align-items: center;
+        justify-content: between;
+        gap: 0 20px;
+
+        &__logo {
+            font-style: 24px;
+            cursor: pointer;
+        }
+
+        &__list {
+            display: flex;
+            gap: 50px;
+            list-style-type: none;
+
+            &--item {
+                text-transform: uppercase;
+
+                &-link {
+                    text-decoration: none;
+                    &:hover{
+                        color: #000;;
+                    }
+                }
+            }
+        }
+
+        &__list2{
+            display: flex;
+            align-items: center;
+            gap: 0px 24px;
+            list-style: none;
+            margin-left: 260px;
+
+            &--item {
+                text-transform: uppercase;
+                .nav-btn{
+                    display: inline-flex;
+                    padding: 18px 30px;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 100px;
+                    background: #299764;
+                    color: #FFF;
+                    &:hover{
+                        background: #19603f; 
+                        color: #FFF;
+                    }
+                }
+
+                &-link {
+                    text-decoration: none;
+                    &:hover{
+                        color: #000;;
+                    }
+                }
+            }
+        }
+
+        &__menyu{
+            width: 40px;
+            height: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            display: none;
+
+            & span{
+                width: 90%;
+                height: 4px;
+                background: #000;
+                border-radius: 10px;
+            }
+        }
+    }
+    #btn{
+        border: 1px solid #E5E7EA;
+        padding: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        background: transparent;
+        
+        &:hover{
+            border: none;
+            background: #E5E7EA;
+        }
+    }
+}
+
+@media screen and (max-width: 835px){
+      
+    header {
+        .nav {
+            height: 94px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            &__logo {
+                font-style: 24px;
+                cursor: pointer;
+                
+            }
+    
+            &__list {
+                display: none; 
+            }
+    
+            &__list2{
+              
+                display: none;
+    
+               
+            }
+    
+            &__menyu{
+                width: 40px;
+                height: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+                display: inline-block;
+    
+                & span{
+                    display: inline-block;
+                    width: 90%;
+                    height: 4px;
+                    background: #000;
+                    border-radius: 10px;
+                }
+            }
+        }
+        #btn{
+            display: none;
+        }
+       
+    }
+}
+
+
+@media screen and (max-width: 391px){
+      
+    header {
+        .nav {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            &__logo {
+                margin-top: 30px;
+                font-style: 24px;
+                cursor: pointer;
+                
+            }
+    
+         
+    
+            &__menyu{
+                width: 40px;
+                height: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 0px;
+                display: inline-block;
+    
+                & span{
+                    display: inline-block;
+                    width: 40px;
+                    height: 4px;
+                    background: #000;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+       
+    }
+}

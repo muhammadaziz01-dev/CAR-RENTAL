@@ -1,0 +1,21 @@
+.container {
+    max-width: 1240px; // your device or project width
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+}
+
+
+@media screen and ( max-width: 835px){
+    .container {
+        max-width: 834px; 
+        padding: 0 20px;
+    }
+}
+
+@media screen and ( max-width: 391px){
+    .container {
+        max-width: 360px; 
+        padding: 0 15px;
+    }
+}

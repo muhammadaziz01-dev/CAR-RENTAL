@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   overflow-x: hidden;
+}
+
+@media (preferes-color-scheme:dark){
+    body {
+        background-color: #0000 !important; 
+        color: #FFF !important;
+    }
+}
