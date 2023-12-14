@@ -11,6 +11,20 @@
         padding: 40px 40px 32px 32px;
         display: block;
         position: relative;
+        overflow: hidden;
+
+        &--div{
+            display: inline-block;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: #299764;
+            position: absolute;
+            top: -70px;
+            right: -70px;
+            display: none;
+
+        }
 
         &--left{
 
@@ -204,8 +218,51 @@
         .section6__wrapper{
            
             width: 333px;
-            height: 632px;
+            height: 642px;
             padding: 24px 20px;
+
+            &--div{
+                display: block;
+            }
+
+            &--left{
+
+                h1{
+                    width: 153px;
+                    font-size: 24px;
+                    margin-bottom: 6px;
+                }
+    
+                article{
+                    width: 293px;
+                    font-size: 12px;
+                    line-height: 20px; 
+                    margin-bottom: 40px;
+                }
+    
+                &--wrappercard{
+                       display: flex;
+                       flex-direction:column;
+                       gap: 0;
+
+                       &-card{
+                        width: 293px;
+                        height: 106px;
+                        padding: 15px;
+                        margin-bottom: 10px;
+    
+                         & p{
+                            width:260px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 22px;
+                            position: absolute;
+                            bottom: 14px;
+                            left: 15px;
+                         }
+                       }
+                }
+            }
 
             &--right{
                 display: none;
